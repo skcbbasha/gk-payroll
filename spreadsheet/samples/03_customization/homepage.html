@@ -111,7 +111,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="homepage.html">Payroll Requests <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Payroll Requests <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Reports</a>
@@ -136,29 +136,41 @@
         </div>
       </nav>
     </div>
-    <div class="payroll-segments">    
-      <a class="btn btn-primary" style="background: #475466;
-      border-radius: 4px 0px 0px 4px;color:#fff;border:none;font-size:13px;display: flex;
-    align-items: center;text-transform: uppercase;" href="#" role="button">Initiate Payroll Request</a>
-      <a class="btn btn-primary" style="background: #ffffff;
-      border-radius: 0px 0px 0px 0px;color:#666666;border:none;border-right:1px solid #CCCCCC;font-size:13px;display: flex;
-    align-items: center;text-transform: uppercase;" href="#" role="button">Compensation Change Request</a>
-      <a class="btn btn-primary" style="background: #ffffff;
-      border-radius: 0px 4px 4px 0px;color:#666666;border:none;font-size:13px;display: flex;
-    align-items: center;text-transform: uppercase;" href="#" role="button">Payroll Dashboard</a>
+    <div class="content">
+    <!-- cards -->
+    <div style="display: flex;justify-content: space-between; width:85%">
+    <div onclick="location.href='03_editor_bar.html'" class="ipr-card" style="background: #FFFFFF;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;width: 400px;
+height: 255px;display: flex;flex-direction: column;align-items: center;justify-content: space-between;">
+<img style="margin-top:1.4em;" src="../../../assets/ipr.svg">
+<div style="background: #475465;
+border-radius: 0px 0px 4px 4px;width: 400px;
+height: 43px;font-size: 16px;letter-spacing: 0.44px;
+text-transform: uppercase;color: #FFFFFF;display: flex;align-items: center;justify-content: center;">Initiate Payroll Request
+</div>
     </div>
-
-    <div>    
-      <script type="text/javascript">
-      webix.ready(function () {
-        webix.ui({
-          view: "spreadsheet",
-          /*data: base_data,*/
-          liveEditor: true,
-          toolbar: "full"
-        });
-      });
-    </script></div>
-
+    <div class="ccr-card" style="background: #FFFFFF;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;width: 400px;
+height: 255px;display: flex;flex-direction: column;align-items: center;justify-content: space-between;">
+<img style="margin-top:1.2em;" src="../../../assets/ccr.svg">
+<div style="background: #475465;
+border-radius: 0px 0px 4px 4px;width: 400px;
+height: 43px;font-size: 16px;letter-spacing: 0.44px;
+text-transform: uppercase;color: #FFFFFF;display: flex;align-items: center;justify-content: center;">Compensation Change Request
+</div>
+    </div>
+    <div class="pd-card" style="background: #FFFFFF;box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;width: 400px;
+height: 255px;display: flex;flex-direction: column;align-items: center;justify-content: space-between;">
+<img style="margin-top:2em;" src="../../../assets/pd.svg">
+<div style="background: #475465;
+border-radius: 0px 0px 4px 4px;width: 400px;
+height: 43px;font-size: 16px;letter-spacing: 0.44px;
+text-transform: uppercase;color: #FFFFFF;display: flex;align-items: center;justify-content: center;">Payroll Dashboard
+</div>
+    </div>
+  </div>
+  <!-- cards -->
+    </div>
   </body>
 </html>

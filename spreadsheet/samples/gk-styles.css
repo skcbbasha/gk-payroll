@@ -52,3 +52,12 @@ body {
   margin-bottom:1em;
 
 }
+.content{
+  background-image: url("../../assets/bg-pattern.png");
+  background-size: cover;
+  height: 80vh;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
