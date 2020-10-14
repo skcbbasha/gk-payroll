@@ -77,3 +77,42 @@ body {
   align-items: center;
   justify-content: center;
 }
+.ipr-card:hover{
+  transform: scale(1.095);
+  box-shadow: 0px 2px 4px #47546567, 0px 4px 24px #47546567;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(0deg, rgba(0, 143, 105, 0), rgb(197,63,63,1)) 1;
+  transition: 0.5s ease-in-out
+}
+.ipr-card{
+  
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+  transition: 0.5s ease-in-out
+}
+.ccr-card:hover{
+  transform: scale(1.095);
+  box-shadow: 0px 2px 4px #47546567, 0px 4px 24px #47546567;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(0deg, rgba(0, 143, 105, 0), rgb(197,63,63,1)) 1;
+  transition: 0.5s ease-in-out
+}
+.ccr-card{
+  
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+  transition: 0.5s ease-in-out
+}
+.pd-card:hover{
+  transform: scale(1.095);
+  box-shadow: 0px 2px 4px #47546567, 0px 4px 24px #47546567;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(0deg, rgba(0, 143, 105, 0), rgb(197,63,63,1)) 1;
+  transition: 0.5s ease-in-out
+}
+.pd-card{
+  
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 24px rgba(0, 0, 0, 0.08);
+  transition: 0.5s ease-in-out
+}
