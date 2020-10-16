@@ -66,6 +66,9 @@ body.webix_full_screen{
  
   
 }
+.webix_view.webix_ssheet.webix_layout_line {
+  width: 100% !important;
+}
 .payroll-segments{
   display: flex;
   justify-content: center;
