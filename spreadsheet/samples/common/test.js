@@ -1,7 +1,7 @@
 var base_data = {
   "styles": [
 	["top","#FFEFEF;#6E6EFF;center;'PT Sans', Tahoma;17px;;;;middle;;"],						
-	["subtop","#818181;#EAEAEA;center;'PT Sans', Tahoma;15px;;;bold;middle;;"],
+	["subtop","#475466;#EAEAEA;center;'PT Sans', Tahoma;15px;;;;middle;;"],
 	["sales","#818181;;center;'PT Sans', Tahoma;15px;;;bold;middle;;"],
 	["total","#818181;;right;'PT Sans', Tahoma;15px;;;bold;middle;;"],
 	["count","#818181;#EAEAEA;center;'PT Sans', Tahoma;15px;;;;middle;;"],
