@@ -109,55 +109,70 @@
   <div class="pd-data-table">
 
     <div class="side-view">
-      <div role="dialog" tabindex="-1" class="modal fade show" id="myModal">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <div style="width: 80%;">
-                        <div><span>00028771</span><span style="margin-left: 35%;">Payroll</span></div>
-                        <div><span>Shanay Spence</span></div>
+      <div class="modal fade show" tabindex="-1" id="myModal" aria-modal="true" role="dialog" style="display: none; padding-left: 16px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="padding-bottom: 0px;">
+                    <div style="width: 85%;"><span>00028771</span><span style="padding-left: 35%;color: #475465;font-weight: 600;">PAYROLL</span>
+                        <p>Shanay Spence</p>
                     </div><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                  <div class="modal-body">
-                    <form>
-                      <div style="width: 100%; padding-left: 1em; padding-right: 1em; display: flex; justify-content: space-between;">                      
-                        <div class="form-group" style="width: 47%;">
-                        <label for="exampleFormControlSelect1">Payroll period</label>
-                        <input class="form-control" type="date" value="today">
-                      </div>
-                      <div class="form-group" style="width: 47%;">
-                        <label for="exampleFormControlSelect1">Wage Type</label>
-                        <select class="form-control custom-select" id="exampleFormControlSelect1">
-                          <option>Regular hours</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
-                          <option>Option 5</option>
-                        </select>
-                      </div>
-                      </div>
-                      <div style="width: 100%; padding-left: 1em; padding-right: 1em; display: flex; justify-content: space-between;">                      
-                        <div class="form-group" style="width: 47%;">
-                        <label for="exampleFormControlSelect1">Compensation</label>
-                        <select class="form-control custom-select" id="exampleFormControlSelect1">
-                          <option>Regular pay</option>
-                          <option>Option 2</option>
-                          <option>Option 3</option>
-                          <option>Option 4</option>
-                          <option>Option 5</option>
-                        </select>
-                      </div>
-                      <div class="form-group" style="width: 47%;">
-                        <label for="exampleFormControlSelect1">Amount</label>
-                        <input class="form-control" type="number" placeholder="1200.00">
-                      </div>
-                      </div>
-
+                <div class="modal-body" style="padding-bottom: 0;">
+                    <div>
+                        <form class="d-flex justify-content-between">
+                            <div class="form-group" style="width: 48%;"><label style="font-size: 13px;">Payroll Period</label><input class="form-control form-control-sm" type="date"></div>
+                            <div class="form-group" style="width: 48%;"><label style="font-size: 13px;">Wage Type</label><select class="custom-select custom-select-sm"><option value="12" selected="">Regular hours</option><option value="13">This is item 2</option><option value="14">This is item 3</option></select></div>
+                        </form>
+                        <form class="d-flex justify-content-between">
+                            <div class="form-group" style="width: 48%;"><label style="font-size: 13px;">Compensation</label><select class="custom-select custom-select-sm"><option value="12" selected="">Regular pay</option><option value="13">This is item 2</option><option value="14">This is item 3</option></select></div>
+                            <div class="form-group" style="width: 48%;"><label style="font-size: 13px;">Amount</label>
+                                <div class="d-flex"><input class="form-control form-control-sm" type="number" style="border-top-right-radius: 0;border-bottom-right-radius: 0;"><select class="custom-select custom-select-sm" style="width: 80px;border-top-left-radius: 0;border-bottom-left-radius: 0;margin-left: -1px;"><option value="12" selected="">USD</option><option value="13">JMD</option></select></div>
+                    </div>
                     </form>
-                      <p class="text-center text-muted">This Area is pending to build </p>
-                  </div>
-                  <div class="modal-footer"><button class="btn btn-light" data-dismiss="modal" type="button">Reject</button><button class="btn btn-primary" type="button">Approve</button></div>
-              </div>
-          </div>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <p>Previous payrolls</p><div style="height: 30vh;
+overflow-y: auto;
+display: flex;
+flex-direction: column-reverse;background: #f5f5f5;">
+<ul class="timeline">
+    <li>
+      <p style="font-size: 12px;margin-bottom: 0;">Amount <span style="font-size: 16px;">1200.00 <span> $</span></span></p>
+      <p style="font-size: 12px;float: right;padding-right: 2em;font-style: italic;">21 Jul, 2020</p>
+      <p style="font-size: 12px;margin-bottom: 0;">Wage Type - <span style="font-size: 14px;">Regular hours</span></p>
+      <p style="font-size: 12px;margin-bottom: 0;">Compensation - <span style="font-size: 14px;">Regular pay</span></p>
+    </li>
+    <li>
+      <p style="font-size: 12px;margin-bottom: 0;">Amount <span style="font-size: 16px;">1200.00 <span> $</span></span></p>
+      <p style="font-size: 12px;float: right;padding-right: 2em;font-style: italic;">21 Aug, 2020</p>
+      <p style="font-size: 12px;margin-bottom: 0;">Wage Type - <span style="font-size: 14px;">Regular hours</span></p>
+      <p style="font-size: 12px;margin-bottom: 0;">Compensation - <span style="font-size: 14px;">Regular pay</span></p>
+    </li>
+    <li>
+      <p style="font-size: 12px;margin-bottom: 0;">Amount <span style="font-size: 16px;">1200.00 <span> $</span></span></p>
+      <p style="font-size: 12px;float: right;padding-right: 2em;font-style: italic;">21 Sep, 2020</p>
+      <p style="font-size: 12px;margin-bottom: 0;">Wage Type - <span style="font-size: 14px;">Regular hours</span></p>
+      <p style="font-size: 12px;margin-bottom: 0;">Compensation - <span style="font-size: 14px;">Regular pay</span></p>
+    </li>
+    <li class="current">
+      <p style="font-size: 16px;margin-bottom: 0;">Current Payroll</p>
+      
+    </li>
+
+</ul>
+</div>
+
+</div>
+                <div style="margin-top: 14px;"><div class="upload-btn-wrapper">
+<button class="btn upload-btn">Upload Attachment</button>
+<input type="file" name="myfile">
+</div></div>
+                <form>
+                    <div class="form-group" style="margin-top: 6px;"><label style="font-size: 13px;">Supporting comment</label><textarea class="form-control"></textarea></div>
+                </form>
+            </div>
+            <div class="modal-footer d-xl-flex justify-content-xl-center" style="padding-top: 0;border-color: rgba(33,37,41,0);border-top-color: rgba(222,226,230,0);"><button class="btn btn-primary approve" type="button" style="background: #475465;border-color: rgba(255,255,255,0);">Approve</button><button class="btn btn-light" data-dismiss="modal" type="button" style="color: #a02529;">Reject</button></div>
+        </div>
+    </div>
       </div>
     </div>
 
